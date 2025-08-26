@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande Librairie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Passer une Commande</h1>
+        <p>Sélectionnez les articles et la quantité souhaitée ci-dessous.</p>
+        
+        <form id="order-form">
+            <h2>Vos Informations</h2>
+            <div class="form-group">
+                <label for="client-name">Nom Complet</label>
+                <input type="text" id="client-name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+                <label for="client-email">Adresse E-mail</label>
+                <input type="email" id="client-email" required autocomplete="email">
+            </div>
+            <div class="form-group">
+                <label for="client-phone">Téléphone</label>
+                <input type="tel" id="client-phone" required autocomplete="tel">
+            </div>
+
+            <h2>Nos Articles Disponibles</h2>
+            <div id="items-container">
+                <div class="loader-container">
+                    <div class="loader"></div>
+                    <p>Chargement de l'inventaire...</p>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-button">Envoyer la Commande</button>
+        </form>
+
+        <div id="status-message"></div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
